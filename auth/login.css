@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌌 Centering & Background Setup */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg.jpg); /* or your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+
+/* 🌐 Login Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🧾 Login Form Styling */
+.login-form {
+    background-color: #ffffff13;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.867);
+    width: 300px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #428e99;
+    border-radius: 20px;
+    background-color: #496d9087;
+}
+
+/* 🧍 Signup Container */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📝 Signup Form Styling */
+.signup-form {
+    background-color: #ffffff13;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.867);
+    width: 360px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #428e99;
+    border-radius: 20px;
+    background-color: #496d9087;
+}
+
+/* 🔘 Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* 🎯 Button Style */
+button {
+    max-width: 100px;
+    margin: 10px 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f5f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 💫 Glow Text */
+.glow {
+    color: #000000;
+    text-shadow:
+        0 0 5px #00aaff,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff,
+        0 0 40px #00ddff;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 💎 Glow Accent Text */
+.glow1 {
+    color: #14e2ab;
+    text-shadow:
+        0 0 5px #21a894,
+        0 0 10px #21a894,
+        0 0 20px #21a894,
+        0 0 40px #21a894;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .login-form, .signup-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .glow {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+.fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}

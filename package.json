@@ -1,0 +1,11 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "just a fun project for my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Orion",
+  "license": "ISC"
+}

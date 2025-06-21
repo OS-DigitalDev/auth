@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Authentication</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <!-- LOGIN FORM -->
+  <main id="loginForm" class="login-container">
+    <h1 class="glow">Login</h1>
+    <form class="login-form" action="/login" method="post">
+      <label class="glow" for="login-username">Username:</label><br>
+      <input type="text" id="login-username" name="username" required><br>
+
+      <label class="glow" for="login-password">Password:</label><br>
+      <input type="password" id="login-password" name="password" required><br>
+
+      <label class="glow" for="remember-me">Remember Me:</label>
+      <input type="checkbox" id="remember-me" name="remember-me"><br>
+
+      <div class="button-container">
+        <button class="glow1" type="submit" id="loginBtn">Login</button><br>
+        <button class="glow1" type="reset">Reset Password</button>
+        <button id="signup" class="glow1" type="button">Register</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- SIGNUP FORM -->
+  <main id="signupForm" class="signup-container" style="display: none;">
+    <h1 class="glow">Sign Up</h1>
+    <form class="signup-form" action="/signup" method="post">
+      <label class="glow" for="signup-username">Username:</label><br>
+      <input type="text" id="signup-username" name="username" required><br>
+
+      <label class="glow" for="signup-email">Email:</label><br>
+      <input type="email" id="signup-email" name="email" required><br>
+
+      <label class="glow" for="signup-password">Password:</label><br>
+      <input type="password" id="signup-password" name="password" required><br>
+
+      <div class="button-container">
+        <button class="glow1" type="submit" id="signupBtn">Sign Up</button><br>
+        <button class="glow1" type="reset">Reset</button>
+        <button id="login" class="glow1" type="button">Login</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
