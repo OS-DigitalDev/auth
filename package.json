@@ -4,8 +4,13 @@
   "description": "just a fun project for my portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Orion",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^7.8.7"
+  }
 }
